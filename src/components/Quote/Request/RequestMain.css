@@ -1,0 +1,286 @@
+.theRequest {
+    width: 100%;
+}
+
+.requestMain {
+    padding: 20px 30px;
+}
+
+.requestMain>.requestForm {
+    border: 1px solid #E4E7EC;
+    padding: 32px 24px;
+    margin-top: 25px;
+    border-radius: 10px;
+
+    &>h4 {
+        margin: 0px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #1A1A21;
+    }
+
+    &>p {
+        margin-top: 6px;
+        color: #98A2B3;
+    }
+
+    &>.quoteInput {
+        &>div {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+
+            &>div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                &>label {
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin: 10px 0px 5px 0px;
+                    color: #475367;
+                }
+
+                &>input {
+                    height: 40px;
+                    background-color: #F0F2F5;
+                    border: 1px solid #D0D5DD;
+                    outline: none;
+                    padding: 0px 15px;
+                    border-radius: 6px;
+                    color: #98A2B3;
+                }
+
+                &>input::placeholder {
+                    color: #98A2B3;
+                }
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+                    height: 40px;
+                    background-color: #F0F2F5;
+                    border: 1px solid #D0D5DD;
+                    padding: 0px 10px;
+                    border-radius: 6px;
+
+                    &>input {
+                        width: 95%;
+                        height: 90%;
+                        background-color: inherit;
+                        border: none;
+                        outline: none;
+                        color: #98A2B3;
+                        padding-left: 5px;
+                    }
+
+                    &>input::placeholder {
+                        color: #98A2B3;
+                    }
+
+                    &>img {
+                        cursor: pointer;
+                    }
+                }
+
+                &>p {
+                    margin: 0px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #667185;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.requestMain>.requestForm>.addItemDiv {
+    border-top: 1px solid #E9E9E9;
+    margin-top: 25px;
+    padding-top: 20px;
+
+    &>h5 {
+        margin: 0px;
+        font-weight: 700;
+        color: #1D2739;
+        font-size: 16px;
+    }
+
+    &>.itemTableDiv {
+        margin-top: 10px;
+
+        &>.addItemrow {
+            padding: 4px 8px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #F7F9FC;
+
+            &>span {
+                font-size: 13px;
+                color: #667185;
+            }
+
+            &>.Items {
+                max-width: 232px;
+                width: 20%;
+            }
+
+            &>.Variants,
+            &>.Quantity,
+            &>.Price,
+            &>.Expected {
+                max-width: 140px;
+                width: 20%;
+            }
+
+            &>.Amount {
+                max-width: 100px;
+                width: 20%;
+            }
+        }
+
+        &>.addItemColumn {
+            &>div {
+                padding: 4px 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+
+                &>.itemName,
+                &>.itemVariant,
+                &>.itemQty,
+                &>.itemDate,
+                &>.itemPrice {
+                    display: flex;
+                    align-items: center;
+                    height: 36px;
+                    max-width: 232px;
+                    width: 20%;
+                    background-color: #F0F2F5;
+                    border: 1px solid #D0D5DD;
+                    border-radius: 6px;
+
+                    &>input {
+                        width: 80%;
+                        height: 88%;
+                        background-color: inherit;
+                        border: none;
+                        outline: none;
+                        color: #98A2B3;
+                        padding-left: 10px;
+                    }
+                }
+
+                &>.itemVariant {
+                    background-color: white;
+                    max-width: 140px;
+
+                    &>input {
+                        width: 76%;
+                    }
+                }
+
+                &>.itemDate,
+                &>.itemPrice {
+                    padding-left: 5px;
+                    background-color: white;
+                    max-width: 140px;
+
+                    &>input {
+                        width: 76%;
+                    }
+                }
+
+                &>.itemQty {
+                    background-color: white;
+                    max-width: 140px;
+                    justify-content: space-between;
+                    padding-right: 5px;
+
+                    &>input {
+                        width: 50%;
+                    }
+
+                    &>h5 {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #667185;
+                        padding: 4px 8px;
+                        min-width: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #F7F9FC;
+                    }
+                }
+
+                &>.itemAmount {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    font-size: 14px;
+                    color: #344054;
+
+                    &>img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    &>.iTemTotalDiv {
+        border-top: 1px solid #E9E9E9;
+        margin-top: 25px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 25px;
+
+        &>div {
+            display: flex;
+            align-items: center;
+            column-gap: 40px;
+            color: #475367;
+        }
+    }
+
+    &>.itemNoteDiv {
+        border-bottom: 1px solid #E9E9E9;
+        padding-bottom: 15px;
+        &>div {
+            margin-top: 20px;
+            max-width: 472px;
+            width: 80%;
+
+            &>h5 {
+                margin: 0px;
+                font-weight: 700;
+                color: #1D2739;
+                font-size: 14px;
+            }
+
+            &>textarea {
+                width: 100%;
+                margin-top: 5px;
+                resize: none;
+                border: 1px solid #D0D5DD;
+                height: 106px;
+                border-radius: 6px;
+            }
+
+            &>p {
+                width: 100%;
+                text-align: right;
+                font-size: 12px;
+                font-weight: 500;
+                margin-top: 3px;
+                color: #667185;
+            }
+        }
+    }
+}

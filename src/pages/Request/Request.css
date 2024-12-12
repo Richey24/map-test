@@ -1,0 +1,9 @@
+.requestDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.requestDiv>.sidebarDiv {
+    height: 1200px;
+}

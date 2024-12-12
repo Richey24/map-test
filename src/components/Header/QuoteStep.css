@@ -1,0 +1,82 @@
+.quoteStep {
+    margin-top: 10px;
+
+    &>h6 {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0px;
+        color: #667185;
+
+        &>span {
+            color: #175CFF;
+        }
+    }
+
+    &>div {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #E4E7EC;
+        border-radius: 10px;
+        padding: 24px 20px;
+
+        &>div {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            &>div:first-child {
+                width: 32px;
+                height: 32px;
+                border: 1px solid #98A2B3;
+                border-radius: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #98A2B3;
+                font-size: 18px;
+            }
+
+            &>div:last-child {
+                &>h5 {
+                    margin: 0px;
+                    color: #101928;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                &>p {
+                    margin: 0px;
+                    color: #667185;
+                    font-size: 12px;
+                    margin-top: 2px;
+                }
+            }
+        }
+
+        &>.activeStep {
+            &>div:first-child {
+                background-color: #175CFF;
+                color: white;
+                border: none;
+            }
+
+            &>div:last-child {
+                &>h5 {
+                    font-weight: 700;
+                }
+                &>p {
+                    color: #475367;
+                }
+            }
+        }
+
+        &>.passedStep {
+            &>div:first-child {
+                background-color: #E7F6EC;
+                color: #0F973D;
+                border: none;
+            }
+        }
+    }
+}

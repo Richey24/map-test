@@ -1,0 +1,9 @@
+.quoteDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.quoteDiv>.sidebarDiv {
+    height: 1100px;
+}

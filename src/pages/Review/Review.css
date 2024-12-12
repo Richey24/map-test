@@ -1,0 +1,9 @@
+.reviewDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.reviewDiv>.sidebarDiv {
+    height: 1250px;
+}

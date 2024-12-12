@@ -1,0 +1,9 @@
+.termsDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.termsDiv>.sidebarDiv {
+    height: 950px;
+}

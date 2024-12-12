@@ -1,0 +1,190 @@
+.theTerms {
+    width: 100%;
+}
+
+.termsMain {
+    padding: 20px 30px;
+}
+
+.termsMain>.termsForm {
+    border: 1px solid #E4E7EC;
+    padding: 32px 24px;
+    margin-top: 25px;
+    border-radius: 10px;
+
+    &>h4 {
+        margin: 0px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #1A1A21;
+    }
+
+    &>p {
+        margin-top: 6px;
+        color: #98A2B3;
+    }
+
+    &>.termsInput {
+        &>.termsInputDiv {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+
+            &>div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                &>label {
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin: 10px 0px 5px 0px;
+                    color: #475367;
+                }
+
+                &>div {
+                    display: flex;
+                    align-items: center;
+                    height: 40px;
+                    background-color: white;
+                    border: 1px solid #D0D5DD;
+                    padding: 0px 10px;
+                    border-radius: 6px;
+
+                    &>input {
+                        width: 95%;
+                        height: 90%;
+                        background-color: inherit;
+                        border: none;
+                        outline: none;
+                        color: #98A2B3;
+                        padding-left: 5px;
+                    }
+
+                    &>input::placeholder {
+                        color: #98A2B3;
+                    }
+
+                    &>img {
+                        cursor: pointer;
+                    }
+
+                    &>div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        column-gap: 5px;
+                        width: 62px;
+                        height: 24px;
+                        font-size: 12px;
+                        background-color: #F7F9FC;
+                        color: #667185;
+                        cursor: pointer;
+
+                        &>img {
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &>.uploadDiv {
+            border-bottom: 1px solid #E9E9E9;
+            padding-bottom: 30px;
+            margin-top: 20px;
+
+            &>div {
+                max-width: 495px;
+                border-top: 1px solid #E9E9E9;
+                padding-top: 20px;
+
+                &>h5 {
+                    margin: 0px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #1A1A21;
+                }
+
+                &>p {
+                    margin-top: 4px;
+                    color: #98A2B3;
+                    font-size: 14px;
+                }
+
+                &>div {
+                    border: 3px dotted #D0D5DD;
+                    border-radius: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+
+                    &>.labelIcon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 56px;
+                        height: 55px;
+                        background-color: #F0F2F5;
+                        border-radius: 100%;
+                        cursor: pointer;
+                        margin-bottom: 5px;
+                    }
+
+                    &>p {
+                        margin: 10px 0px;
+                        font-size: 14px;
+
+                        &>span {
+                            color: #175CFF;
+                            font-weight: 500;
+                        }
+                    }
+
+                    &>h6 {
+                        margin: 0px;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #98A2B3;
+                    }
+
+                    &>div {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 10px;
+
+                        &>div {
+                            height: 2px;
+                            width: 100px;
+                            background-color: #F0F2F5;
+                        }
+
+                        &>p {
+                            color: #98A2B3;
+                            font-size: 12px;
+                        }
+                    }
+
+                    &>button {
+                        width: 118px;
+                        height: 36px;
+                        border: 1.5px solid #175CFF;
+                        outline: none;
+                        background-color: inherit;
+                        color: #175CFF;
+                        border-radius: 8px;
+                        cursor: pointer;
+
+                        &>label {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
